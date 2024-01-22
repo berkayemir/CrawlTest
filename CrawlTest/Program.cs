@@ -21,8 +21,8 @@ class Program
 
         driver.Navigate().GoToUrl("https://tr.linkedin.com/");
 
-        string kullaniciAdi = "brky_emr92@windowslive.com";
-        string sifre = "Gökçe22101992";
+        string kullaniciAdi = "**";
+        string sifre = "**";
 
         IWebElement kullaniciAdiAlan = driver.FindElement(By.Id("session_key"));
         kullaniciAdiAlan.SendKeys(kullaniciAdi);
@@ -49,7 +49,7 @@ class Program
         httpClient.Timeout = new TimeSpan(0, 1, 0);
 
         MultipartFormDataContent form = new MultipartFormDataContent();
-        form.Add(new StringContent("K85123235688957"), "apikey");
+        form.Add(new StringContent("*"), "apikey");
         //form.Add(new StringContent("tur"),"language");
 
         form.Add(new StringContent("2"), "ocrengine");
